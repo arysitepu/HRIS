@@ -1,0 +1,161 @@
+
+  .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 200px;
+  height: 250px;
+  /* border-radius: 200%; */
+}
+
+
+.avatar1 {
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.avatar2{
+  width: 80px;
+}
+
+.background-report{
+  background-color: #B0DAFF;
+}
+
+/* .gambar_sakit{
+  width: 20em;
+  margin: auto;
+} */
+
+[data-title] {
+  position: relative;
+  cursor: help;
+}
+
+[data-title]::before {
+  content: attr(data-title);
+  position: absolute;
+  top: -32px;
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 2px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  font-family: sans-serif;
+  white-space: nowrap;
+  opacity: 0; /* membuat tooltip menjadi tidak terlihat */
+  transition: opacity 0.3s ease-in-out; /* menambahkan efek transisi ke properti opacity */
+}
+
+[data-title]:hover::before {
+  opacity: 1; /* membuat tooltip muncul dengan efek fade-in ketika mouse mengarah ke tooltip */
+}
+[data-title]:hover::after {
+  opacity: 1; /* membuat tooltip muncul dengan efek fade-in ketika mouse mengarah ke tooltip */
+}
+
+[data-title]::after {
+  content: '';
+  position: absolute;
+  top: -9px; 
+  left: 12px;
+  display: inline-block;
+  color: #fff;
+  border: 8px solid transparent;
+  border-top: 8px solid #000;
+  opacity: 0; /* membuat tooltip menjadi tidak terlihat */
+  transition: opacity 0.3s ease-in-out; /* menambahkan efek transisi ke properti opacity */
+}
+
+.img-detail{
+  width: 10rem;
+}
+
+.dashed-border {
+  border: 2px dashed #000; /* Ketebalan 2px, garis putus-putus, warna hitam */
+  padding: 20px; /* Padding agar ada ruang di dalam border */
+  width: auto; /* Lebar elemen */
+  text-align: left; /* Teks di tengah */
+  margin: auto; /* Margin otomatis agar elemen berada di tengah halaman */
+}
+
+.text-print{
+  font-size: 18px;
+  color: black;
+}
+
+.form-tanda-tangan{
+  width: 70%; 
+  text-align: left; 
+  float: left;
+}
+
+.jarak-tanga-tangan{
+  padding-bottom: 80px;
+}
+
+
+/* [data-title] {
+  position: relative;
+  cursor: help;
+}
+
+[data-title]:hover::before {
+  content: attr(data-title);
+  position: absolute;
+  top: -32px;
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 2px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  font-family: sans-serif;
+  white-space: nowrap;
+}
+[data-title]:hover::after {
+  content: '';
+  position: absolute;
+  top: -8px; 
+  left: 12px;
+  display: inline-block;
+  color: #fff;
+  border: 8px solid transparent;
+  border-top: 8px solid #000;
+  } */
